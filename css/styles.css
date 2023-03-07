@@ -11,22 +11,21 @@ body {
     color: var(--main-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.02em;
-    /* font-size: 16px; */
+    font-size: 16px;
 }
 
 .list {
     list-style: none;
 }
 
-button {
+/* button {
     font-family: inherit;
-}
+} */
 
 /* Header */
 
 .logo {
     font-weight: 800;
-    line-height: 24px;
     letter-spacing: 0.03em;
     text-align: left;
     text-decoration: none;
@@ -42,7 +41,7 @@ button {
 
 .site-nav a {
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.5;
     color: var(--second-color);
 }
 
@@ -53,13 +52,10 @@ button {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link.current,
-address .link:hover,
-address .link:focus {
+.contacts-list .link:hover,
+.contacts-list .link:focus {
     color: var(--second-accent-color);
 }
-
-/* main */
-/* Hero */
 
 .hero {
     background-color: var(--second-color);
@@ -73,14 +69,10 @@ address .link:focus {
     line-height: 1.07;
 }
 
-.hero-slogan span {
-    text-transform: none;
-}
-
 .title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11em;
+    line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
     color: var(--second-color);
@@ -88,28 +80,6 @@ address .link:focus {
 
 .ours-works a {
     color: var(--second-color);
-}
-.order-button {
-    color: var(--background-color);
-    background-color: var(--accent-color);
-    border: none;
-    display: flex;
-    font-size: inherit;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 32px;
-    gap: 10px;
-    width: 169px;
-    height: 56px;
-    left: 20px;
-    top: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 500;
-    line-height: 1.5em;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.04em;
 }
 
 /* .selection {} */
@@ -119,24 +89,39 @@ address .link:focus {
     background-color: var(--second-accent-color);
 }
 
-.categories-btn {
-    color: var(--accent-color);
-    background-color: var(--main-white-color);
-    font-family: Roboto;
+.btn {
     border: none;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.04em;
-    box-sizing: border-box;
+    border-radius: 4px;
     display: flex;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    font-size: inherit;
+}
+
+.order-button {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.categories-btn {
+    color: var(--accent-color);
+    background-color: var(--main-white-color);
+    box-sizing: border-box;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px 24px;
     border: 1px solid var(--main-white-color);
-    border-radius: 4px;
-    flex: none;
-    cursor: pointer;
 }
 
 .categories-btn:hover,
@@ -154,7 +139,7 @@ address .link:focus {
     color: #f4f4fd;
 }
 
-p {
+.advantages-title .advantages-text {
     line-height: 1.5;
     color: var(--main-color);
 }
@@ -163,12 +148,12 @@ p {
     color: var(--main-white-color);
 }
 
-address a {
+.contacts-list a {
     font-style: normal;
     color: var(--main-color);
 }
 
-h3 {
+.advantages-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
