@@ -35,6 +35,10 @@ body {
     line-height: 1.17;
 }
 
+.works-item :active {
+    color: inherit;
+}
+
 .logo-web {
     color: var(--accent-color);
 }
